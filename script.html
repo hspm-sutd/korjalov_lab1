@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <button id="task1">TASK 1</button>
+    <script>
+        function task1(){
+            let sum=0;
+                let number = prompt('Введите числа через пробел');
+                let arr = number.split(' ');
+                    for (let i=0; i<arr.length; i++) {
+                         sum = sum + parseInt(arr[i]);
+                                                     }
+                alert('Сумма = ' + (sum));
+                };
+                var Task1 = document.querySelector('#task1')
+    Task1.addEventListener('click' , task1)
+         
+    </script>
+    <button onclick="Click1()">TASK 2</button>
+    <p class="0">абзац 1</p>
+    <p>абзац 2</p> 
+    <p>абзац 3</p>     
+    <script>
+            function Click1() {
+                document.body.style.fontFamily = 'Times New Roman';
+                document.body.style.color = "blue";
+    };
+    </script>
+    <button onclick="Click2()">TASK 3</button>
+        <div id="div2"><p id="text2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed metus felis, dignissim sed sodales in, vestibulum a massa.
+        Pellentesque feugiat posuere est, quis feugiat diam ornare vitae.
+        Integer in nulla pellentesque, vulputate ante ac, iaculis ipsum.
+        Sed pellentesque nulla et nisi pulvinar vehicula. </p>
+        </div>
+<script>
+        function Click2() {
+    document.getElementById('div2').style.background = "linear-gradient(LightCoral, Red)";
+    document.getElementById('text2').style.background = "white";
+    document.getElementById('text2').style.mixBlendMode = "screen";
+    document.getElementById('text2').style.color = "black";
+    };
+    
+    let res = 0;
+    let num2 = prompt('Введите выражение');
+    let arr2 = num2.split('');
+    res = parseInt(arr2[0]);
+    
+    for (let i=0; i<arr2.length; i++) {
+    if (arr2[i] == '+') {
+    res = res + parseInt(arr2[i+1]);
+    }
+    if (arr2[i] == '-') {
+    res = res - parseInt(arr2[i+1]);
+    }
+    }
+    alert('= ' + (res));
+
+
+    </script>
+</body>
+</html>
